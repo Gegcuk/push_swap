@@ -1,33 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sa.c                                               :+:      :+:    :+:   */
+/*   printstack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:30:59 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/11 19:22:47 by alazunin         ###   ########.fr       */
+/*   Created: 2024/07/11 19:16:53 by alazunin          #+#    #+#             */
+/*   Updated: 2024/07/11 19:16:56 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../stackops.h"
+#include <stdio.h>
+#include "stackops.h"
 
-void	sa(t_node **a)
+void	printstack(t_node *node)
 {
-	t_node	*first;
-	t_node	*second;
-
-	if (*a == NULL || (*a)->next == NULL)
-		return ;
-	first = *a;
-	second = first->next;
-	if (second->next != NULL)
+	while (node != NULL)
 	{
-		second->next->prev = first;
+		printf("%d: ", node->data);
+		node = node->next;
 	}
-	first->next = second->next;
-	second->next = first;
-	second->prev = first->prev;
-	first->prev = second;
-	*a = second;
+	printf("\n");
 }

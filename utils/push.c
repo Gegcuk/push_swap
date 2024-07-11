@@ -1,33 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   sa.c                                               :+:      :+:    :+:   */
+/*   push.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/11 18:30:59 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/11 19:22:47 by alazunin         ###   ########.fr       */
+/*   Created: 2024/07/11 19:11:42 by alazunin          #+#    #+#             */
+/*   Updated: 2024/07/11 19:23:52 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../stackops.h"
+#include "stackops.h"
 
-void	sa(t_node **a)
+void	push(t_node	**node_list, int number)
 {
-	t_node	*first;
-	t_node	*second;
+	t_node	*new_node;
 
-	if (*a == NULL || (*a)->next == NULL)
-		return ;
-	first = *a;
-	second = first->next;
-	if (second->next != NULL)
+	new_node = (t_node *)malloc (sizeof(t_node));
+	new_node->data = number;
+	new_node->next = (*node_list);
+	new_node->prev = NULL;
+	if (*node_list != NULL)
 	{
-		second->next->prev = first;
+		(*node_list)->prev = new_node;
 	}
-	first->next = second->next;
-	second->next = first;
-	second->prev = first->prev;
-	first->prev = second;
-	*a = second;
+	(*node_list) = new_node;
 }

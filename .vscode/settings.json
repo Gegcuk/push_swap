@@ -1,0 +1,6 @@
+{
+	"files.associations": {
+		"stackops.h": "c",
+		"stddef.h": "c"
+	}
+}

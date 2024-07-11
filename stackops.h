@@ -1,30 +1,40 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   stackops.h                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2024/07/11 18:34:52 by alazunin          #+#    #+#             */
+/*   Updated: 2024/07/11 19:22:37 by alazunin         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef STACKOPS_H
-#define STACKOPS_H
+# define STACKOPS_H
+# include <stddef.h>
+# include <stdlib.h>
 
-#include <stddef.h>
-
-typedef struct Node
+typedef struct t_node
 {
-	int data;
-	struct Node* next;
-	struct Node* prev;
-} Node;
+	int				data;
+	struct t_node	*next;
+	struct t_node	*prev;
+}	t_node;
 
+void	sa(t_node **a);
+void	sb(t_node **b);
+void	ss(t_node **a, t_node **b);
+void	pa(t_node **a, t_node **b);
+void	pb(t_node **a, t_node **b);
+void	ra(t_node **a);
+void	rb(t_node **b);
+void	rr(t_node **a, t_node **b);
+void	rra(t_node **a);
+void	rrb(t_node **b);
+void	rrr(t_node **a, t_node **b);
 
-void sa(Node** a);
-void sb(Node** b);
-void ss(Node** a, Node** b);
-void pa(Node** a, Node** b);
-void pb(Node** a, Node** b);
-void ra(Node** a);
-void rb(Node** b);
-void rr(Node** a, Node** b);
-void rra(Node** a);
-void rrb(Node** b);
-void rrr(Node** a, Node** b);
-
-void push(Node** head, int new_data);
-void printStack(Node* node);
+void	push(t_node **head, int new_data);
+void	printstack(t_node *node);
 
 #endif
-
