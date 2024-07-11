@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   sa.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
+/*   By: alekseylazunin <alekseylazunin@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 18:30:59 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/11 19:22:47 by alazunin         ###   ########.fr       */
+/*   Updated: 2024/07/11 23:34:41 by alekseylazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void	sa(t_node **a)
 	t_node	*second;
 
 	if (*a == NULL || (*a)->next == NULL)
+	{
 		return ;
+	}	
 	first = *a;
 	second = first->next;
 	if (second->next != NULL)

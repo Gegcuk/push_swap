@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
+/*   By: alekseylazunin <alekseylazunin@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 18:52:54 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/11 19:30:09 by alazunin         ###   ########.fr       */
+/*   Updated: 2024/07/11 23:47:11 by alekseylazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,8 +46,7 @@ int	main(int argc, char *argv[])
 	printf("Stack b before sb: ");
 	printstack(b);
 
-	sa(&a);
-	sb(&b);
+	ss(&a, &b);
 
 	printf("Stack a after sa: ");
 	printstack(a);
