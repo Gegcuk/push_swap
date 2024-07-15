@@ -6,7 +6,7 @@
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 17:25:55 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/15 17:26:09 by alazunin         ###   ########.fr       */
+/*   Updated: 2024/07/15 18:13:41 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,8 +90,8 @@ int	main(int argc, char **argv)
 	printstack(a);
 	printstack(b);
 
-	free_stack(a);
-	free_stack(b);
+	freestack(a);
+	freestack(b);
 
 	return (0);
 }
