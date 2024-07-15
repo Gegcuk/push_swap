@@ -6,7 +6,7 @@
 /*   By: alekseylazunin <alekseylazunin@student.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 18:52:54 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/11 23:47:11 by alekseylazu      ###   ########.fr       */
+/*   Updated: 2024/07/12 12:03:37 by alekseylazu      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,18 +40,27 @@ int	main(int argc, char *argv[])
 	push(&b, 5);
 	push(&b, 4);
 
-	printf("Stack a before sa: ");
+	printf("Stack a before ra: ");
 	printstack(a);
 
-	printf("Stack b before sb: ");
+	printf("Stack b before rb: ");
 	printstack(b);
 
-	ss(&a, &b);
+	ra(&a);
+	rb(&b);
 
-	printf("Stack a after sa: ");
+	printf("Stack a after ra: ");
 	printstack(a);
 
-	printf("Stack b after sb: ");
+	printf("Stack b after rb: ");
+	printstack(b);
+
+	rr(&a, &b);
+
+	printf("Stack a after rr: ");
+	printstack(a);
+
+	printf("Stack b after rr: ");
 	printstack(b);
 
 	return (0);
