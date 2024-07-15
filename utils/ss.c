@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ss.c                                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alekseylazunin <alekseylazunin@student.    +#+  +:+       +#+        */
+/*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 23:44:41 by alekseylazu       #+#    #+#             */
-/*   Updated: 2024/07/11 23:51:08 by alekseylazu      ###   ########.fr       */
+/*   Updated: 2024/07/15 16:38:21 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-# include "stackops.h"
+#include "stackops.h"
 
-void	ss(t_node **a, t_node **b){
-    sa(a);
-    sa(b);
+void	ss(t_node **a, t_node **b)
+{
+	sa(a);
+	sb(b);
 }

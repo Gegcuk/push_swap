@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   rr.c                                               :+:      :+:    :+:   */
+/*   free_stack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/12 12:01:02 by alekseylazu       #+#    #+#             */
-/*   Updated: 2024/07/15 16:38:13 by alazunin         ###   ########.fr       */
+/*   Created: 2024/07/15 16:26:59 by alazunin          #+#    #+#             */
+/*   Updated: 2024/07/15 17:25:07 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stackops.h"
 
-void	rr(t_node **a, t_node **b)
+void	free_stack(t_node *head)
 {
-	ra(a);
-	rb(b);
+	t_node	*temp;
+
+	while (head != NULL)
+	{
+		temp = head;
+		head = head->next;
+		free(temp);
+	}
 }

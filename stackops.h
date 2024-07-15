@@ -6,7 +6,7 @@
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 18:34:52 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/11 19:22:37 by alazunin         ###   ########.fr       */
+/*   Updated: 2024/07/15 16:27:51 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,7 @@ typedef struct t_node
 	int				data;
 	struct t_node	*next;
 	struct t_node	*prev;
-}	t_node;
-
+}					t_node;
 void	sa(t_node **a);
 void	sb(t_node **b);
 void	ss(t_node **a, t_node **b);
@@ -33,8 +32,7 @@ void	rr(t_node **a, t_node **b);
 void	rra(t_node **a);
 void	rrb(t_node **b);
 void	rrr(t_node **a, t_node **b);
-
 void	push(t_node **head, int new_data);
 void	printstack(t_node *node);
-
+void	free_stack(t_node *head);
 #endif

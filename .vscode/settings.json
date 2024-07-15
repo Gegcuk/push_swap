@@ -1,6 +1,10 @@
 {
 	"files.associations": {
-		"stackops.h": "c",
-		"stddef.h": "c"
+	  "stackops.h": "c",
+	  "stddef.h": "c"
+	},
+	"[c]": {
+	  "editor.defaultFormatter": "keyhr.42-c-format"
 	}
-}
+  }
+  

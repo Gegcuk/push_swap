@@ -8,7 +8,9 @@ CFLAGS = -Wall -Wextra -Werror -I.  # Add -I. to include the current directory f
 TARGET = push_swap
 
 # Source files
-SRCS = main.c utils/sa.c utils/sb.c utils/push.c utils/printstack.c utils/ss.c utils/ra.c utils/rb.c utils/rr.c
+SRCS = main.c utils/pa.c utils/pb.c utils/push.c utils/printstack.c utils/ra.c\
+		utils/rb.c utils/rr.c utils/rra.c utils/rrb.c utils/rrr.c utils/sa.c\
+		utils/sb.c utils/ss.c utils/free_stack.c
 
 # Object files directory
 OBJDIR = obj

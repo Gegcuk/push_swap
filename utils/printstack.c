@@ -3,15 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   printstack.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alekseylazunin <alekseylazunin@student.    +#+  +:+       +#+        */
+/*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 19:16:53 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/12 12:04:42 by alekseylazu      ###   ########.fr       */
+/*   Updated: 2024/07/15 15:55:47 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "stackops.h"
+#include <stdio.h>
 
 void	printstack(t_node *node)
 {
