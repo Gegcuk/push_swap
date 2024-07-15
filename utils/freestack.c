@@ -1,18 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   free_stack.c                                       :+:      :+:    :+:   */
+/*   freestack.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/15 16:26:59 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/15 17:25:07 by alazunin         ###   ########.fr       */
+/*   Updated: 2024/07/15 18:09:32 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stackops.h"
 
-void	free_stack(t_node *head)
+void	freestack(t_node *head)
 {
 	t_node	*temp;
 
