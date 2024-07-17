@@ -1,40 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   selectionsort.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/07/15 17:25:55 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/17 13:44:04 by alazunin         ###   ########.fr       */
+/*   Created: 2024/07/17 13:44:18 by alazunin          #+#    #+#             */
+/*   Updated: 2024/07/17 16:32:11 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "stackops.h"
-#include <stdio.h>
-#include <stdlib.h>
 
-int	main(int argc, char **argv)
+void	selectionsort(t_node **a, t_node **b)
 {
-	t_node	*a;
-	t_node	*b;
-	int		i;
-	int		value;
-
-	a = NULL;
-	b = NULL;
-	if (argc < 2)
-	{
-		fprintf(stderr, "Usage: %s <list of integers>\n", argv[0]);
-		return (1);
-	}
-	for (i = 1; i < argc; i++)
-	{
-		value = atoi(argv[i]);
-		push(&a, value);
-		push(&b, value);
-	}
-	freestack(a);
-	freestack(b);
-	return (0);
+	
 }

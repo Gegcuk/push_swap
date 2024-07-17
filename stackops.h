@@ -6,7 +6,7 @@
 /*   By: alazunin < alazunin@student.42london.co    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/11 18:34:52 by alazunin          #+#    #+#             */
-/*   Updated: 2024/07/15 18:09:39 by alazunin         ###   ########.fr       */
+/*   Updated: 2024/07/17 13:44:25 by alazunin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,4 +35,5 @@ void	rrr(t_node **a, t_node **b);
 void	push(t_node **head, int new_data);
 void	printstack(t_node *node);
 void	freestack(t_node *head);
+void	selectionsort(t_node **a, t_node **b);
 #endif
